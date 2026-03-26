@@ -5,19 +5,19 @@ import React from "react";
 const Navbar = () => {
   const links = (
     <>
-      <li className="mx-2.5 hover:text-[#FBA933]">
+      <li className="mx-2.5 hover:text-secondary">
         <Link href="#">Home</Link>
       </li>
-      <li className="mx-2.5 hover:text-[#FBA933]">
+      <li className="mx-2.5 hover:text-secondary">
         <Link href="#">About us </Link>
       </li>
-      <li className="mx-2.5 hover:text-[#FBA933]">
+      <li className="mx-2.5 hover:text-secondary">
         <Link href="#">Our courses </Link>
       </li>
-      <li className="mx-2.5 hover:text-[#FBA933]">
+      <li className="mx-2.5 hover:text-secondary">
         <Link href="#">Testimonial</Link>
       </li>
-      <li className="mx-2.5 hover:text-[#FBA933]">
+      <li className="mx-2.5 hover:text-secondary">
         <Link href="#">FAQ</Link>
       </li>                                 
     </>
@@ -46,7 +46,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-[#2D3E50]"
+              className="menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-primary"
             >
               {
                 links
@@ -56,14 +56,14 @@ const Navbar = () => {
           <Image src="/logo.png" alt="Gyan Logo" width={70} height={44}></Image>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className=" menu-horizontal px-1 text-[#2D3E50]">
+          <ul className=" menu-horizontal px-1 text-primary">
             {
                 links
             }
           </ul>
         </div>
         <div className="navbar-end ">
-          <Link href="#" className="py-2.5 px-2.5 bg-[#FBA933] rounded-[5px] text-white">Get Started Now</Link>
+          <Link href="#" className="py-2.5 px-2.5 bg-secondary rounded-[5px] text-base-100">Get Started Now</Link>
         </div>
       </div>
     </div>
